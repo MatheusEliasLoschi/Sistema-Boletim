@@ -14,18 +14,16 @@
     <form action="" id="formulario">
         Serie:<select id="serie" required>
             <option value="">Selecione</option>
-            <option value="1">1ª Serie</option>
-            <option value="2">2ª Serie</option>
-            <option value="3">3ª Serie</option>
         </select>
-        Turma <input type="text" id="turma" placeholder="INFO A" required>
-        Ano Letivo <input type="number" min="2020" max="2100" required>
+        Turma <input type="text" id="turma" placeholder="A" required >
+        Ano Letivo <input type="number" min="2020" max="2100" required id="ano">
         <button>Cadastrar</button>
     </form>
     <p id="mensagem"></p>
     <h2>Turmas Cadastrados</h2>
     <ul id="lista"></ul>
 </body>
+<script src="../js/conexaoAPI.js"></script>
 <script src='../js/turmas.js'></script>
 <script src='../js/functionHeader.js'></script>
 </html>

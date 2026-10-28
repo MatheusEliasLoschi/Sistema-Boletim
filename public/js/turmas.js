@@ -1,5 +1,5 @@
 async function carregar() {
-    const series = await api('/api/turmas/series') 
+    const series = await api('/api/turmas/series')
     for (const serie of series) {
         document.getElementById("serie").add(new Option(serie.nome, serie.id)) /* adiciona um nvo option dentro do elemento com .add */
     }
@@ -14,7 +14,7 @@ async function listarTurmas() {
 
     for (const turma of turmas) {
         const item = document.createElement("li")
-        item.textContent = `${turma.serie} - ${turma.nome} - ${turma.ano}`
+        item.textContent = `${turma.serie} - ${turma.nome} - ${turma.ano}`;
         linha.appendChild(item)
     }
 }
@@ -29,16 +29,20 @@ document.getElementById('formulario').addEventListener('submit', async (event) =
             },
             body: JSON.stringify({
                 serie_id: document.getElementById("serie").value,
-                nome: document.getElementById("nome").value,
+                turma: document.getElementById("turma").value,
                 ano: document.getElementById("ano").value
 
             })
         });
-        document.getElementById('nome').value = ''
-        document.getElementById('nome').value = ''
-        await listarAlunos();
+        document.getElementById('turma').value = ''
+        document.getElementById('mensagem').textContent = ''
+        document.getElementById('mensagem').textContent = 'Turma cadastrada com sucesso'
+        await listarTurmas();
     } catch (error) {
         mostrarErro(error);
     }
-}
-)
+})
+
+window.addEventListener("DOMContentLoaded", () => {
+    carregar()
+})
