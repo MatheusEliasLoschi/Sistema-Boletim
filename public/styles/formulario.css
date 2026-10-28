@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+.form-cadastro {
+     display: flex;
+     align-items: flex-end;
+     gap: 15px;
+ }
+
+ .form-grupo {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+ }
+
+ .form-group label {
+    
+     font-size: 16px;
+     color: #333;
+     
+ }
+
+ .form-group input {
+     height: 35px;
+     width: 250px;
+     padding: 5px 10px;
+     font-size: 14px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+ }
+
+ .btn-cadastrar {
+     height: 40px;
+     width: 130px;
+     padding: 0 20px;
+     font-size: 14px;
+     background-color: #eaeaea;
+     color: #000;
+     border: 1px solid #adadad;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ .btn-cadastrar:hover {
+     background-color: #dbdbdb;
+ }
+
+ input[type="text"] {
+     height: 35px;
+     width: 200px;
+ }

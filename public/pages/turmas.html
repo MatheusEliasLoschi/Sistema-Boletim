@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Turmas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/header.css'>
+    <link rel="shortcut icon" href="../assets/favicon/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h2>Turmas</h2>
+    <form action="" id="formulario">
+        Serie:<select id="serie" required>
+            <option value="">Selecione</option>
+            <option value="1">1ª Serie</option>
+            <option value="2">2ª Serie</option>
+            <option value="3">3ª Serie</option>
+        </select>
+        Turma <input type="text" id="turma" placeholder="INFO A" required>
+        Ano Letivo <input type="number" min="2020" max="2100" required>
+        <button>Cadastrar</button>
+    </form>
+    <p id="mensagem"></p>
+    <h2>Turmas Cadastrados</h2>
+    <ul id="lista"></ul>
+</body>
+<script src='../js/turmas.js'></script>
+<script src='../js/comum.js'></script>
+</html>

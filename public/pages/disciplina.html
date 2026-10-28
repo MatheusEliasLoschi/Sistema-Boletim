@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Boletim</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/header.css'>
+    <link rel="shortcut icon" href="../assets/favicon/favicon_io/favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+
+    <form id="formulario">
+        Nome da Disciplina: <input type="text" id="disciplina" required>
+        <button>Cadastrar</button>
+    </form>
+    <h2>Vincular à Serie</h2>
+
+    <form action="" id="vincular">
+        Série <select name="" id="serie" required>
+            <option value="">Selecione</option>
+        </select>
+        Disciplina <select name="" id="disciplina" required>
+            <option value="">Selecione</option>
+        </select>
+        <button>Vincular</button>
+    </form>
+    <p id="mensagem"></p>
+    <h2>Disciplinas Cadastradas</h2>
+    <ul id="lista"></ul>
+    <h2>Disciplinas por Serie</h2>
+    <ul id="vinculos"></ul>
+</body>
+<script src='../js/disciplinas.js'></script>
+<script src='../js/comum.js'></script>
+</html>

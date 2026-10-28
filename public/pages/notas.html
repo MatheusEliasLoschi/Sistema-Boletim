@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Notas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/header.css'>
+    <link rel="shortcut icon" href="../assets/favicon/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    Turma <select name="" id="turma" required>
+        <option value="">Selecione</option>
+    </select>
+    <form id="formulario">
+        Aluno <select name="" id="aluno" required>
+            <option value="">Selecione</option>
+        </select>
+        Disciplinas <select name="" id="disciplinas" required>
+            <option value="">Selecione</option>
+        </select>
+        Trimestre <select name="" id="trimestre" required>
+            Serie:<select id="serie" required>
+                <option value="">Selecione</option>
+                <option value="1">1ª Serie</option>
+                <option value="2">2ª Serie</option>
+                <option value="3">3ª Serie</option>
+            </select>
+        </select>
+    </form>
+    <p id="mensagem"></p>
+    <h2>Alunos Cadastrados</h2>
+    <ul id="lista"></ul>
+</body>
+<script src='../js/alunos.js'></script>
+<script src='../js/comum.js'></script>
+</html>
