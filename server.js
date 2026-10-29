@@ -10,8 +10,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/alunos', require('./routes/alunos'));
 app.use('/api/turmas', require('./routes/turmas'));
-/* app.use('/api/disciplinas', require('./routes/disciplinas'));
-app.use('/api/matriculas', require('./routes/matriculas'));
+app.use('/api/disciplinas', require('./routes/disciplinas'));
+
+/*app.use('/api/matriculas', require('./routes/matriculas'));
 app.use('/api/notas', require('./routes/notas'));
 app.use('/api/boletim', require('./routes/boletim')); */
 

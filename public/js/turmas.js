@@ -10,11 +10,11 @@ async function carregar() {
 async function listarTurmas() {
     const turmas = await api('/api/turmas')
     const linha = document.getElementById("lista")
-    linha.replaceChildren() /* substitui tido lá por esse elemtos */
+    linha.replaceChildren() /* substitui tudo lá por esse elementos */
 
     for (const turma of turmas) {
         const item = document.createElement("li")
-        item.textContent = `${turma.serie} - ${turma.nome} - ${turma.ano}`;
+        item.textContent = `${turma.serie} ${turma.nome} - ${turma.ano}`;
         linha.appendChild(item)
     }
 }
